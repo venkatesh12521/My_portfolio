@@ -8,7 +8,7 @@ const AboutSection = () => {
   useEffect(() => {
     const handleVisibility = () => {
       const currentScrollPos = window.pageYOffset;
-      if (currentScrollPos > 100) {
+      if (currentScrollPos > 0) {
         setIsVisible(true);
       } else {
         setIsVisible(false);
@@ -38,7 +38,7 @@ const AboutSection = () => {
               <TypeAnimation
                 data-aos="fade-up"
                 sequence={[
-                  "Web Developer",
+                  "Frontend Developer",
                   2000,
                   "Freelancer",
                   2000,
@@ -47,7 +47,7 @@ const AboutSection = () => {
                 speed={30}
                 wrapper="h2"
                 repeat={Infinity}
-                className="text-yellow-500 text-4xl font-bold sm:text-3xl"
+                className="text-yellow-500 text-2xl font-bold sm:text-xl"
               /> 
               <p className="text-lg mb-6">
                 Hey there! 👋 I'm Venkatesh, a recent graduate with a passion for frontend development and creating delightful user experiences. I'm excited to embark on my journey in the tech industry and eager to contribute to innovative projects that make a positive impact.
