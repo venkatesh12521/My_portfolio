@@ -33,7 +33,7 @@ const HeroSection = () => {
               initial={{ y: -50, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="text-4xl md:text-6xl font-bold mb-4"
+              className="text-2xl md:text-6xl font-bold mb-4"
             >
               Venkatesh Veerisetti
             </motion.h1>
@@ -43,7 +43,7 @@ const HeroSection = () => {
               transition={{ delay: 0.7, duration: 0.5 }}
               className="text-lg md:text-xl mb-8"
             >
-              <p>
+              <p className='text-xs'>
                 <TypeAnimation
                   sequence={[
                     'Frontend Developer', // Types 'Frontend Developer'
